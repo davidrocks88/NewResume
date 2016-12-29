@@ -32,8 +32,48 @@ class OpeningPage extends Component {
   getInfoBox() {
   	return (
   		<div className={styles.infoBox}>
-  			<h1>All about me!!!</h1>
-  			<p>All about me!!!</p>
+  			<h1 style={{
+  				marginBottom: '-2.5%',
+  				fontSize: '5em'
+  			}}>David Bernstein</h1>
+  			<h2 style={{
+  				fontSize: '4em',
+  				fontStyle: 'italic'
+  			}}> I am a... </h2>
+  			<li style={{
+  				fontSize: '2em',
+  				textAlign: 'left'
+  			}}>Tufts 2017, Computer Science and Biomedical Engineering</li>
+  			<li style={{
+  				fontSize: '2em',
+  				textAlign: 'left'
+  			}}>Full Stack Software Engineer</li>
+  			<li style={{
+  				fontSize: '2em',
+  				textAlign: 'left',
+  				paddingLeft: '2em',
+  				listStyle: 'none'
+  			}}>Web, Mobile, and Wearables</li>
+  			<li style={{
+  				fontSize: '2em',
+  				textAlign: 'left'
+  			}}>Life-long Learner</li>
+  			<br />
+  			 <li style={{
+  				fontSize: '2em',
+  				textAlign: 'left',
+  				listStyle: 'none'
+  			}}>See my <a href="http://www.linkedin.com/in/dbernstein7"><em>LinkedIn</em></a></li>
+  			 <li style={{
+  				fontSize: '2em',
+  				textAlign: 'left',
+  				listStyle: 'none'
+  			}}>See my <a href="http://www.github.com/davidrocks88"><em>Github</em></a></li>
+  			<li style={{
+  				fontSize: '2em',
+  				textAlign: 'left',
+  				listStyle: 'none'
+  			}}> <a href="mailto:david.bernstein@tufts.edu"><em>Contact Me</em></a></li>
   		</div>
   	);
   }
@@ -49,8 +89,11 @@ class OpeningPage extends Component {
 		          display: 'inline',
 		          flex: 'center',
 		          fill: '#bfffc4'
-		        }} >
-		        <text className={styles.hexMedText} x="27.5%" y="52.5%">Projects</text>
+		        }} 
+		        href="#"
+		        >
+
+		        <text href="#" className={styles.hexMedText} x="27.5%" y="52.5%">Projects</text>
 
 		        </Hexagon>
 		    </div>
@@ -62,8 +105,11 @@ class OpeningPage extends Component {
 		          display: 'inline',
 		          flex: 'center',
 		          fill: '#bfffc4'
-		        }} >
-		        <text className={styles.hexMedText} x="34%" y="52.5%">Skills</text>
+		        }} 
+		        href="#"
+		        >
+
+		        <text href="#" className={styles.hexMedText} x="34%" y="52.5%">Skills</text>
 
 		        </Hexagon>
 		    </div>
@@ -75,8 +121,11 @@ class OpeningPage extends Component {
 		          display: 'inline',
 		          flex: 'center',
 		          fill: '#bfffc4'
-		        }} >
-		        <text className={styles.hexMedText} x="22%" y="52.5%">Experience</text>
+		        }} 
+		        href="#"
+		        >
+
+		        <text href="#" className={styles.hexMedText} x="22%" y="52.5%">Experience</text>
 
 		        </Hexagon>
 		    </div>
@@ -88,9 +137,12 @@ class OpeningPage extends Component {
 		          display: 'inline',
 		          flex: 'center',
 		          fill: '#bfffc4'
-		        }} >
-		        <text className={styles.hexMedText} x="27.5%" y="45.5%">Ongoing</text>
-		        <text className={styles.hexMedText} x="27.5%" y="59.5%">Learning</text>
+		        }} 
+		        href="#"
+		        >
+
+		        <text href="#" className={styles.hexMedText} x="27.5%" y="45.5%">Ongoing</text>
+		        <text href="#" className={styles.hexMedText} x="27.5%" y="59.5%">Learning</text>
 
 		        </Hexagon>
 		    </div>
