@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: hex-rotate infinite 20s linear;
   height: 80px;
 }
 
@@ -18,9 +18,21 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+@keyframes hex-rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes txt-rotate {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform:rotate(4deg);}
+  50% {-webkit-transform:rotate(-4deg);}
+  100% {-webkit-transform:rotate(4deg);}
 }
 
 :local(.navItem) {
@@ -45,5 +57,32 @@
   flex: 1;
   flex-direction: column;
   vertical-align: top;
+  text-align: center;
+}
+
+:local(.moreInfo) {
+  flex: 1;
+  display: block;
+  width: 100%;
+    justify-content: center;
+    vertical-align: top;
+  text-align: center;
+}
+
+:local(.hexMed) {
+  width: 10%;
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+  margin: 2%;
+  /*animation: hex-rotate infinite 200s linear;*/
+  -webkit-animation: wiggle 5s infinite;
+
+}
+
+:local(.hexMedText) {
+  font-size: 400%;
+  justify-content: center;
   text-align: center;
 }

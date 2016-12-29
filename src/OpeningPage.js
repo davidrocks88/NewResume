@@ -8,7 +8,7 @@ class OpeningPage extends Component {
 	constructor(props) {
 	  super(props);
 	
-	  this.state = {};
+
 	}
 
 	getHex() {
@@ -38,13 +38,76 @@ class OpeningPage extends Component {
   	);
   }
 
+  getMoreInfo() {
+  	return(
+  		<div className={styles.moreInfo}>
+  			<div className={styles.hexMed}>
+	  			<Hexagon 
+		        style={{
+		          stroke: '#000000',
+		          strokeWidth: 1,
+		          display: 'inline',
+		          flex: 'center',
+		          fill: '#bfffc4'
+		        }} >
+		        <text className={styles.hexMedText} x="27.5%" y="52.5%">Projects</text>
+
+		        </Hexagon>
+		    </div>
+  			<div className={styles.hexMed}>
+	  			<Hexagon 
+		        style={{
+		          stroke: '#000000',
+		          strokeWidth: 1,
+		          display: 'inline',
+		          flex: 'center',
+		          fill: '#bfffc4'
+		        }} >
+		        <text className={styles.hexMedText} x="34%" y="52.5%">Skills</text>
+
+		        </Hexagon>
+		    </div>
+  			<div className={styles.hexMed}>
+	  			<Hexagon 
+		        style={{
+		          stroke: '#000000',
+		          strokeWidth: 1,
+		          display: 'inline',
+		          flex: 'center',
+		          fill: '#bfffc4'
+		        }} >
+		        <text className={styles.hexMedText} x="22%" y="52.5%">Experience</text>
+
+		        </Hexagon>
+		    </div>
+  			<div className={styles.hexMed}>
+	  			<Hexagon 
+		        style={{
+		          stroke: '#000000',
+		          strokeWidth: 1,
+		          display: 'inline',
+		          flex: 'center',
+		          fill: '#bfffc4'
+		        }} >
+		        <text className={styles.hexMedText} x="27.5%" y="45.5%">Ongoing</text>
+		        <text className={styles.hexMedText} x="27.5%" y="59.5%">Learning</text>
+
+		        </Hexagon>
+		    </div>
+	  	</div>	
+  	);
+  }
+
   render() {
   	    var hex = this.getHex();
   	    var infoBox = this.getInfoBox();
+  	    var moreInfo = this.getMoreInfo();
+
   	    return (
   	    	<div>
   	    	{hex}
   	    	{infoBox}
+			{moreInfo}
   	    	</div>
   	    );
   }
