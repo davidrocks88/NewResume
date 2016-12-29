@@ -8,7 +8,9 @@ class OpeningPage extends Component {
 	constructor(props) {
 	  super(props);
 	
-
+	  this.getHex = this.getHex.bind(this);
+	  this.getInfoBox = this.getInfoBox.bind(this);
+	  this.getMoreInfo = this.getMoreInfo.bind(this)
 	}
 
 	getHex() {
@@ -81,7 +83,8 @@ class OpeningPage extends Component {
   getMoreInfo() {
   	return(
   		<div className={styles.moreInfo}>
-  			<div className={styles.hexMed}>
+  			<div className={styles.hexMed}
+		        onClick={() => this.props.handler('Projects')}>
 	  			<Hexagon 
 		        style={{
 		          stroke: '#000000',
@@ -92,12 +95,11 @@ class OpeningPage extends Component {
 		        }} 
 		        href="#"
 		        >
-
 		        <text href="#" className={styles.hexMedText} x="27.5%" y="52.5%">Projects</text>
 
 		        </Hexagon>
 		    </div>
-  			<div className={styles.hexMed}>
+  			<div className={styles.hexMed} onClick={() => this.props.handler('Skills')}>
 	  			<Hexagon 
 		        style={{
 		          stroke: '#000000',
@@ -113,7 +115,7 @@ class OpeningPage extends Component {
 
 		        </Hexagon>
 		    </div>
-  			<div className={styles.hexMed}>
+  			<div className={styles.hexMed} onClick={() => this.props.handler('Experience')}>
 	  			<Hexagon 
 		        style={{
 		          stroke: '#000000',
@@ -129,7 +131,7 @@ class OpeningPage extends Component {
 
 		        </Hexagon>
 		    </div>
-  			<div className={styles.hexMed}>
+  			<div className={styles.hexMed} onClick={() => this.props.handler('Ongoing Learning')}>
 	  			<Hexagon 
 		        style={{
 		          stroke: '#000000',

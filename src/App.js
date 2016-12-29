@@ -4,12 +4,14 @@ import styles from './App.css';
 import Hexagon from 'react-hexagon'
 import OpeningPage from './OpeningPage.js'
 
+
 class App extends Component {
 
   constructor(props) {
     super(props);
   
     this.state = {txt: 'zero'};
+    this.handleTextChange = this.handleTextChange.bind(this);
 
   }
 
@@ -18,28 +20,38 @@ class App extends Component {
       <div> {this.state.txt} </div>
     );
   }
+  handleTextChange(e) {
+    var newText = e;
+    if(e.type === 'click') {
+      newText = e.target.innerHTML;
+    }
+    this.setState({
+      txt: newText
+    });
 
+  }
   
 
   render() {
-    var text = this.getText();
+    const text = this.state.txt;
     return (
       <div>
         <Navbar className={styles.navBar}>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">David Bernstein</a>
+              <a href="#">{text}</a>
             </Navbar.Brand>
           </Navbar.Header>
           <Nav>
-            <NavItem className = {styles.navItem} onClick={() => this.setState({txt: 'one'})} eventKey={1} href="#">Projects</NavItem>
-            <NavItem eventKey={2} href="#">Skills</NavItem>
-            <NavItem eventKey={3} href="#">Experience</NavItem>
-            <NavItem eventKey={4} href="#">Ongoing Learning</NavItem>
-            <NavItem eventKey={4} href="#">Resume</NavItem>            
+            <NavItem eventKey={1} href="#" onClick={this.handleTextChange}>Projects</NavItem>
+            <NavItem eventKey={2} href="#" onClick={this.handleTextChange}>Skills</NavItem>
+            <NavItem eventKey={3} href="#" onClick={this.handleTextChange}>Experience</NavItem>
+            <NavItem eventKey={4} href="#" onClick={this.handleTextChange}>Ongoing Learning</NavItem>
+            <NavItem eventKey={5} href="#" onClick={this.handleTextChange}>Resume</NavItem>            
           </Nav>
         </Navbar>
-        <OpeningPage />
+        <OpeningPage 
+          handler={this.handleTextChange}/>
       </div>
     );
   }
