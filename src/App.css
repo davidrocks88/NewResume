@@ -36,11 +36,11 @@
 }
 
 :local(.navItem) {
-  color: #bfffc4;
+  color: #66CCFF;
 }
 
 :local(.navBar) {
-  background: #bfffc4;
+  background: #66CCFF;
   color: white;
 }
 
@@ -69,6 +69,7 @@
     justify-content: center;
     vertical-align: top;
   text-align: center;
+  margin-bottom: -30%
 }
 
 :local(.hexMed) {

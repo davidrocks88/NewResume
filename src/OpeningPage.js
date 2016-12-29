@@ -16,7 +16,7 @@ class OpeningPage extends Component {
 	      <div className={styles.hexBig}>
 	        <Hexagon 
 	        style={{
-	          stroke: '#bfffc4',
+	          stroke: '#66CCFF',
 	          display: 'inline',
 	          flex: 'center',
 	        }}
@@ -88,7 +88,7 @@ class OpeningPage extends Component {
 		          strokeWidth: 1,
 		          display: 'inline',
 		          flex: 'center',
-		          fill: '#bfffc4'
+		          fill: '#66CCFF',
 		        }} 
 		        href="#"
 		        >
@@ -104,7 +104,7 @@ class OpeningPage extends Component {
 		          strokeWidth: 1,
 		          display: 'inline',
 		          flex: 'center',
-		          fill: '#bfffc4'
+		          fill: '#66CCFF',
 		        }} 
 		        href="#"
 		        >
@@ -120,7 +120,7 @@ class OpeningPage extends Component {
 		          strokeWidth: 1,
 		          display: 'inline',
 		          flex: 'center',
-		          fill: '#bfffc4'
+		          fill: '#66CCFF',
 		        }} 
 		        href="#"
 		        >
@@ -136,7 +136,7 @@ class OpeningPage extends Component {
 		          strokeWidth: 1,
 		          display: 'inline',
 		          flex: 'center',
-		          fill: '#bfffc4'
+		          fill: '#66CCFF',
 		        }} 
 		        href="#"
 		        >
